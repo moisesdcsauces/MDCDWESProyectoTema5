@@ -1,5 +1,5 @@
 <?php
-$archivo = '../scriptsDB/BorraDBMDCProyectoTema5.sql';
+$archivo = '../scriptsDB/BorraDBMDCDWESProyectoTema5.sql';
 
 if ($archivo && file_exists($archivo)) {
     echo "<h2>Viendo el codigo de: " . htmlspecialchars($archivo) . "</h2>";
