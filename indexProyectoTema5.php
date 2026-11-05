@@ -54,23 +54,23 @@
             <tbody>
                 <tr>
                     <td>CreaDBMDCProyectoTema5</td>
-                    <td><a href="" class="btn btn-codigo">Código</a></td>
+                    <td><a href="mostrarCodigo/muestraScriptCrea.php" class="btn btn-codigo">Código</a></td>
                 </tr>
                 <tr>
                     <td>CargaInicialDBMDCProyectoTema5</td>
-                    <td><a href="" class="btn btn-codigo">Código</a></td>
+                    <td><a href="mostrarCodigo/muestraScriptCarga.php" class="btn btn-codigo">Código</a></td>
                 </tr>
                 <tr>
                     <td>BorraDBMDCProyectoTema5</td>
-                    <td><a href="" class="btn btn-codigo">Código</a></td>
+                    <td><a href="mostrarCodigo/muestraScriptBorrar.php" class="btn btn-codigo">Código</a></td>
                 </tr>
                 <tr>
                     <td>configDBPDO</td>
-                    <td><a href="" class="btn btn-codigo">Código</a></td>
+                    <td><a href="mostrarCodigo/muestraConfigDBPDO.php" class="btn btn-codigo">Código</a></td>
                 </tr>
                 <tr>
                     <td>libreriaValidacion</td>
-                    <td><a href="" class="btn btn-codigo">Código</a></td>
+                    <td><a href="mostrarCodigo/muestraLibreriaValidacion.php" class="btn btn-codigo">Código</a></td>
                 </tr>
             </tbody>
         </table>
@@ -87,8 +87,8 @@
                 <tr>
                     <td>0</td>
                     <td>Mostrar el contenido de las variables superglobales y phpinfo()</td>
-                    <td><a href="" class="btn btn-ejecutar">Ejecutar</a></td>
-                    <td><a href="" class="btn btn-codigo">Código</a></td>
+                    <td><a href="codigoPHP/ejercicio01PDO.php" class="btn btn-ejecutar">Ejecutar</a></td>
+                    <td><a href="mostrarCodigo/muestraEjercicio01PDO.php" class="btn btn-codigo">Código</a></td>
                 </tr>
                 
                 <tr>
