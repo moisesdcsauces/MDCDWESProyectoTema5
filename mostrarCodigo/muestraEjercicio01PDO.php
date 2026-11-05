@@ -9,6 +9,6 @@ if ($archivo && file_exists($archivo)) {
     highlight_file($archivo);
 } else {
     echo "<h2>Error: El archivo no existe.</h2>";
-    echo "<a href='../indexProyectoTema4.php'>⬅ Volver al inicio</a>";
+    echo "<a href='../indexProyectoTema5.php'>⬅ Volver al inicio</a>";
 }
 ?>
