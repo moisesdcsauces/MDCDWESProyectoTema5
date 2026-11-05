@@ -172,10 +172,10 @@ if (isset($_GET['ver_phpinfo'])) {
                 <a class="pie__red" href="../indexProyectoTema5.php" title="Ir al índice del Tema 5" aria-label="Ir al índice del Tema 5">
                     <img src="../../webroot/images/icons/casa.png" alt="">
                 </a>
-                <a class="pie__red" href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+                <a class="pie__red" href="https://github.com/moisesdcsauces/MDCDWESProyectoTema5" target="_blank" rel="noopener" aria-label="GitHub">
                     <img src="../../webroot/images/icons/github.png" alt="">
                 </a>
-                <a class="pie__red" href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <a class="pie__red" href="https://www.linkedin.com/in/mois%C3%A9s-alberto-dom%C3%ADnguez-cruz/" target="_blank" rel="noopener" aria-label="LinkedIn">
                     <img src="../../webroot/images/icons/linkedin.png" alt="">
                 </a>
             </div>
