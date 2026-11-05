@@ -1,12 +1,19 @@
+<?php
+// PHPINFO: Se procesa antes de enviar cualquier HTML al navegador
+if (isset($_GET['ver_phpinfo'])) {
+    phpinfo();
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ejercicio 00 - Variables Superglobales y phpinfo()</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@400;500;600;700;800&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://googleapis.com">
+        <link rel="preconnect" href="https://gstatic.com" crossorigin>
+        <link href="https://googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@400;500;600;700;800&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../../webroot/css/styles.css">
         <link rel="stylesheet" href="../webroot/css/estilos.css">
 
@@ -97,7 +104,7 @@
         <header id="site-header" class="cabecera">
             <div class="cabecera__contenedor">
                 <img class="monograma" src="../../webroot/images/cruz.png" alt="">
-                <h1 class="titulo-header">TEMA 5: Desarrollo de Aplicaciones Web (Entorno de Trabajo)</h1>
+                <h1 class="titulo-header">TEMA 5: Desarrollo de Aplicaciones Web</h1>
                 <img class="monograma" src="../../webroot/images/cruz.png" alt="">
             </div>
         </header>
@@ -107,27 +114,16 @@
                 <div class="container">
                     <!--
                     -- Moisés Alberto Dominguez Cruz
-                    -- 05/11/2026
                     -- Ejercicio 00 (Tema 5). Mostrar el contenido de las variables superglobales y phpinfo().
                     -->
                     <a href='../indexProyectoTema5.php' class='enlace-volver'>⬅ Volver al inicio</a>
                     <hr>
 
                     <?php
-                    // Iniciamos sesion y creamos sesiones de prueba para que se visualicen
-                    session_start();
-                    $_SESSION['usuario_prueba'] = 'Moises_Alberto';
-                    $_SESSION['perfil'] = 'administrador';
-
                     // PHPINFO()
                     echo "<h2>1. Informacion de phpinfo</h2>";
-                    echo "<p>Mediante la funcion <code>phpinfo()</code> se obtiene informacion detallada sobre la configuración actual de PHP en el servidor.</p>";
+                    echo "<p>Mediante la funcion <code>phpinfo()</code> se obtiene informacion detallada sobre la configuracion actual de PHP en el servidor.</p>";
                     echo "<a href='?ver_phpinfo=1' target='_blank' class='btn-phpinfo'>Ejecutar y ver phpinfo() completo en nueva pestaña</a>";
-
-                    if (isset($_GET['ver_phpinfo'])) {
-                        phpinfo();
-                        exit;
-                    }
 
                     // RECORRIDO DE TODAS LAS SUPERGLOBALES CON FOREACH
                     echo "<h2>3. Recorrido con foreach()</h2>";
@@ -140,7 +136,7 @@
                         '\$_POST'    => $_POST,
                         '\$_FILES'   => $_FILES,
                         '\$_COOKIE'  => $_COOKIE,
-                        '\$_SESSION' => isset($_SESSION) ? $_SESSION : [],
+                        '\$_SESSION' => $_SESSION,
                         '\$_ENV'     => $_ENV
                     ];
 
@@ -158,7 +154,7 @@
                                 }
                                 echo "<tr>";
                                 echo "<td><strong>$nombre</strong></td>";
-                                echo "<td>$contenido</td>";
+                                echo "<td>" . htmlspecialchars($contenido) . "</td>";
                                 echo "</tr>";
                             }
                             echo "</table>";
@@ -176,10 +172,10 @@
                 <a class="pie__red" href="../indexProyectoTema5.php" title="Ir al índice del Tema 5" aria-label="Ir al índice del Tema 5">
                     <img src="../../webroot/images/icons/casa.png" alt="">
                 </a>
-                <a class="pie__red" href="https://github.com/moisesdcsauces/MDCDWESProyectoTema5" target="_blank" rel="noopener" aria-label="GitHub">
+                <a class="pie__red" href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
                     <img src="../../webroot/images/icons/github.png" alt="">
                 </a>
-                <a class="pie__red" href="https://www.linkedin.com/in/mois%C3%A9s-alberto-dom%C3%ADnguez-cruz/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <a class="pie__red" href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
                     <img src="../../webroot/images/icons/linkedin.png" alt="">
                 </a>
             </div>
