@@ -130,7 +130,7 @@
                     }
 
                     // RECORRIDO DE TODAS LAS SUPERGLOBALES CON FOREACH
-                    echo "<h2>3. Recorrido exhaustivo de todas las Superglobales con foreach()</h2>";
+                    echo "<h2>3. Recorrido con foreach()</h2>";
 
                     // Array asociativo que agrupa todas las variables superglobales de PHP
                     $aSuperglobales = [
@@ -144,26 +144,26 @@
                         '\$_ENV'     => $_ENV
                     ];
 
-                    // Recorrido del array maestro
+                    // Recorrido del array
                     foreach ($aSuperglobales as $nombreSuperglobal => $arraySuperglobal) {
                         echo "<h3>Contenido de $nombreSuperglobal</h3>";
 
                         if (!empty($arraySuperglobal)) {
                             echo "<table class='tabla-superglobales'>";
-                            echo "<tr><th>Clave (Key)</th><th>Valor (Value)</th></tr>";
+                            echo "<tr><th>Nombre</th><th>Contenido</th></tr>";
                             
-                            foreach ($arraySuperglobal as $clave => $valor) {
-                                if (is_array($valor)) {
-                                    $valor = "<pre>" . print_r($valor, true) . "</pre>";
+                            foreach ($arraySuperglobal as $nombre => $contenido) {
+                                if (is_array($contenido)) {
+                                    $contenido = "<pre>" . print_r($contenido, true) . "</pre>";
                                 }
                                 echo "<tr>";
-                                echo "<td><strong>$clave</strong></td>";
-                                echo "<td>$valor</td>";
+                                echo "<td><strong>$nombre</strong></td>";
+                                echo "<td>$contenido</td>";
                                 echo "</tr>";
                             }
                             echo "</table>";
                         } else {
-                            echo "<div class='vacio'>La variable $nombreSuperglobal está vacía en este momento.</div>";
+                            echo "<div class='vacio'>La variable $nombreSuperglobal esta vacia en este momento.</div>";
                         }
                     }
                     ?>
