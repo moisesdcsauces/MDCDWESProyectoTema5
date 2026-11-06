@@ -126,7 +126,7 @@ if (isset($_GET['ver_phpinfo'])) {
                     echo "<a href='?ver_phpinfo=1' target='_blank' class='btn-phpinfo'>Ejecutar y ver phpinfo() completo en nueva pestaña</a>";
 
                     // RECORRIDO DE TODAS LAS SUPERGLOBALES CON FOREACH
-                    echo "<h2>3. Recorrido con foreach()</h2>";
+                    echo "<h2>2. Recorrido con foreach()</h2>";
 
                     // Array asociativo que agrupa todas las variables superglobales de PHP
                     $aSuperglobales = [
