@@ -94,8 +94,8 @@
                 <tr>
                     <td>1</td>
                     <td>Desarrollo de un control de acceso con identificación del usuario basado en la función header()</td>
-                    <td><a href="" class="btn btn-ejecutar">Ejecutar</a></td>
-                    <td><a href="" class="btn btn-codigo">Código</a></td>
+                    <td><a href="codigoPHP/ejercicio01PDO.php" class="btn btn-ejecutar">Ejecutar</a></td>
+                    <td><a href="mostrarCodigo/muestraEjercicio01PDO.php" class="btn btn-codigo">Código</a></td>
                     <td></td>
                     <td></td>
                 </tr>
