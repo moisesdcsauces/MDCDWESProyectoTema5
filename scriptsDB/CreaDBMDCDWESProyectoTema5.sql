@@ -18,8 +18,8 @@ CREATE TABLE IF NOT EXISTS T01_Usuario (
     T01_CodUsuario VARCHAR(8) PRIMARY KEY,
     T01_Password VARCHAR(255) NOT NULL,
     T01_DescUsuario VARCHAR(255) NOT NULL,
-    T01_FechaHoraUltimaConexion DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    T01_NumConexiones INT NOT NULL DEFAULT 1,
+    T01_FechaHoraUltimaConexion DATETIME NOT NULL DEFAULT NULL,
+    T01_NumConexiones INT NOT NULL DEFAULT 0,
     T01_Perfil ENUM('usuario', 'administrador') DEFAULT 'usuario',
     T01_ImagenUsuario MEDIUMBLOB DEFAULT NULL
 ) ENGINE=InnoDB;
