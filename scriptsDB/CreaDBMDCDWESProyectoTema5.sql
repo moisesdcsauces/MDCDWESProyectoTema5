@@ -1,4 +1,4 @@
--- Creación de la base de datos utilizando tus iniciales MDC
+-- Creación de la base de datos
 CREATE DATABASE IF NOT EXISTS DBMDCDWESProyectoTema5;
 
 -- Uso de la base de datos
@@ -30,4 +30,5 @@ CREATE USER IF NOT EXISTS 'userMDCDWESProyectoTema5'@'%' IDENTIFIED BY 'paso';
 -- Asignación de permisos al usuario sobre la base de datos
 GRANT ALL PRIVILEGES ON DBMDCDWESProyectoTema4.* TO 'userMDCDWESProyectoTema5'@'%';
 
+-- Fuerza al motor a leer los cambios recientes y aplicarlos al instante sin necesidad de reiniciar el servidor.
 FLUSH PRIVILEGES;
