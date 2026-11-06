@@ -1,5 +1,5 @@
 <?php
-$archivo = '../codigoPHP/ejercicio01PDO.php';
+$archivo = '../codigoPHP/ejercicio00PDO.php';
 
 if ($archivo && file_exists($archivo)) {
     echo "<h2>Viendo el codigo de: " . htmlspecialchars($archivo) . "</h2>";
