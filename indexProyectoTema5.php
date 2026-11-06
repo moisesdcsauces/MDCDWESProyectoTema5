@@ -87,8 +87,8 @@
                 <tr>
                     <td>0</td>
                     <td>Mostrar el contenido de las variables superglobales y phpinfo()</td>
-                    <td><a href="codigoPHP/ejercicio01PDO.php" class="btn btn-ejecutar">Ejecutar</a></td>
-                    <td><a href="mostrarCodigo/muestraEjercicio01PDO.php" class="btn btn-codigo">Código</a></td>
+                    <td><a href="codigoPHP/ejercicio00PDO.php" class="btn btn-ejecutar">Ejecutar</a></td>
+                    <td><a href="mostrarCodigo/muestraEjercicio00PDO.php" class="btn btn-codigo">Código</a></td>
                 </tr>
                 
                 <tr>
