@@ -103,10 +103,10 @@
 
                         $resultado = $miDB->prepare($sql);
                         
-                        // Ejecutamos pasando el array asociativo con parametros con nombre
+                        // Ejecutamos pasando el array
                         $resultado->execute([
                             ':usuario' => $_SERVER['PHP_AUTH_USER'],
-                            ':passwd'  => $_SERVER['PHP_AUTH_PW']
+                            ':passwd'  => $_SERVER['PHP_AUTH_USER'].$_SERVER['PHP_AUTH_PW'] // concatenacion del usuario y contraseña. En la insercion a la base de datos se tiene que concatenar.
                         ]);
 
                         // Recuperamos el registro
