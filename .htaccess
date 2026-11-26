@@ -9,3 +9,5 @@ Options -Indexes
 # si el proyecto se despliega directamente en la raiz, cambiar a /error/404.html y /error/403.html
 ErrorDocument 404 /MDCDWESProyectoTema5/error/404.html
 ErrorDocument 403 /MDCDWESProyectoTema5/error/403.html
+
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
